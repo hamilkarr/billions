@@ -15,7 +15,7 @@ async function getBillions() {
 export default async function HomePage() {
     const billions = await getBillions();
     return (
-        <ul className='grid grid-cols-4 gap-4 mx-auto w-4/5 mt-20'>
+        <ul className='grid grid-cols-2 md:grid-cols-4 gap-4 mx-auto w-4/5 mt-20'>
             {billions.map((billion: any) => 
                 (<Billion
                     key={billion.id}

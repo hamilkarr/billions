@@ -41,7 +41,7 @@ export default async function Billionaire({params: {id}}: {params: {id: string}}
 
             <article className='mt-12 bg-slate-800 px-5 py-16'>
                 <h2 className='text-2xl font-bold mb-4'>Financial Assets</h2>
-                <ul className='grid grid-cols-4 gap-4'>
+                <ul className='grid grid-cols-2 md:grid-cols-4 gap-4'>
                     {billionaire.financialAssets.map(
                         (asset: assetsProps) => (
                             <li key={asset.ticker} className='p-3 rounded-lg border border-gray-500 *:text-sm flex flex-col gap-2 min-h-28'>
